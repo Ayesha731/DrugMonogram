@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DIAZEPAM- Drug Monograph</title>
+    <style>
+      /* Resetting margin and padding */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      /* Body and General Styling */
+      body {
+        font-family: "Arial", sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        line-height: 1.6;
+        overflow-x: hidden;
+      }
+
+      /* Navbar */
+      nav {
+        background-color: #333;
+        height: 100px;
+        padding: 25px 0;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+      }
+
+      nav ul li {
+        margin: 0 10px;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 500;
+        transition: color 0.3s ease-in-out;
+      }
+
+      nav ul li a:hover {
+        color: rgba(80, 120, 122, 0.904);
+        border-bottom: 2px solid rgba(80, 120, 122, 0.904);
+        /* border: 2px solid #f76b1c; */
+        /* width: 80px; */
+        /* height: 40px; */
+        /* padding: 10px; */
+        /* border-radius: 25px; */
+      }
+
+      /* Hero Section */
+      .hero-section {
+        /* background-image: url("img3.jpg"); */
+        background: url("https://www.hopkinsmedicine.org/-/media/images/health/3_-wellness/living-with-a-chronic-disease/help-for-managing-multiple-medications-hero.jpg?h=500&iar=0&mh=500&mw=1300&w=1297&hash=39564DCDFC519C53AB1BB2BE193B631F")
+          no-repeat center center;
+        background-size: cover;
+        height: 620px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        text-align: center;
+        position: relative;
+        margin-bottom: 50px;
+        animation: fadeIn 2s ease-out;
+      }
+
+      .hero-section h1 {
+        font-size: 3em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        z-index: 2;
+        animation: slideIn 1s ease-in-out;
+      }
+      .hero-section p {
+        font-size: 1em;
+
+        z-index: 2;
+        animation: slideIn 1s ease-in-out;
+      }
+
+      #btn1 {
+        margin-top: 20px;
+        width: 120px;
+        height: 40px;
+        border-radius: 25px;
+        background-color: #333;
+        color: white;
+      }
+      #btn:hover {
+        border: 2px solid white;
+        background-color: wheat;
+        color: black;
+      }
+
+      .hero-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 1;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateY(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      /* Container for content sections */
+      .container {
+        width: 85%;
+
+        margin: 0 auto;
+        padding: 60px 0;
+      }
+
+      /* Section Styling */
+      .section {
+        margin-bottom: 60px;
+        position: relative;
+        animation: fadeIn 2s ease-out;
+      }
+
+      .section h2 {
+        font-size: 2.5em;
+        color: #2d2d2d;
+        font-weight: 600;
+        margin-bottom: 30px;
+        text-align: center;
+        position: relative;
+        animation: slideIn 1s ease-in-out;
+      }
+
+      .section h2::after {
+        content: "";
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+        width: 80px;
+        height: 4px;
+        background-color: #f76b1c;
+      }
+
+      /* Section Content Styling */
+      .section-content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+        opacity: 0;
+        animation: fadeIn 2s ease-out forwards;
+      }
+
+      .section-content img {
+        width: 50%;
+        height: 50%;
+        border-radius: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .section-content img:hover {
+        transform: scale(1.05);
+      }
+
+      .section-content p {
+        width: 45%;
+        font-size: 1.1em;
+        line-height: 1.8;
+        color: #555;
+        text-align: justify;
+      }
+
+      /* Horizontal Line Styling */
+      hr {
+        border: 0;
+        border-top: 2px solid #ddd;
+        margin: 50px 0;
+      }
+
+      /* Footer Styling */
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 30px 0;
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      footer p {
+        font-size: 14px;
+        letter-spacing: 1px;
+      }
+
+      /* Button Styling */
+      .btn {
+        background-color: #f76b1c;
+        color: white;
+        padding: 12px 30px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 16px;
+        transition: background-color 0.3s;
+      }
+
+      .btn:hover {
+        background-color: #333;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .hero-section h1 {
+          font-size: 2.2em;
+        }
+        .hero-section p {
+          font-size: 1.2em;
+        }
+
+        .section-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .section-content img {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+
+        .section-content p {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+
+    <nav>
+      <ul>
+        <li>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/c/c8/Umt_logo.png"
+            alt="umt-logo"
+            width="80px"
+            height="70px"
+          />
+        </li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#uses">Indication</a></li>
+        <li><a href="#uses1">Dosage</a></li>
+        <li><a href="#form">DForm</a></li>
+        <li><a href="#action">pharmacodynamics</a></li>
+        <li><a href="#warning">Parameters</a></li>
+        <li><a href="#side">SideEffects</a></li>
+        <li><a href="#contra">Contraindications</a></li>
+        <li><a href="#usein">Use</a></li>
+        <li><a href="#war">Warning</a></li>
+        <li><a href="#inter">Interaction</a></li>
+        <li><a href="#brand">Brands</a></li>
+        <li><a href="#refer">References</a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+      <h1>DIAZEPAM - Drug Monograph</h1>
+      <p>
+        Diazepam is a anxiolytic drug belong to class benzodiazepine with rapid
+        onset <br />commonly used to treat panic disorders, severe anxiety,
+        alcoholbr <br />withdrawal, and seizures.
+      </p>
+      <button id="btn1">Read Below</button>
+    </section>
+
+    <!-- Main Content Section -->
+    <div class="container">
+      <!-- Overview Section -->
+      <section id="overview" class="section">
+        <h2>Overview</h2>
+        <div class="section-content">
+          <img
+            src="https://5.imimg.com/data5/SELLER/Default/2024/6/428515222/OS/ZJ/VD/1803202/diazepam-tablets-10-mg.png"
+            alt="aspirin overview"
+          />
+          <p>
+            <b>Introduction:</b>
+            <br />
+            Diazepam is a anxiolytic drug belong to class benzodiazepine with
+            rapid onset commonly used to treat panic disorders, severe anxiety,
+            alcohol withdrawal, and seizures.
+            <br />
+            <br />
+            <b>Chemical Formula:</b>
+            C <sub>16</sub> H <sub>13</sub>ClN <sub>2</sub>O
+            <br />
+            <br />
+            <b>Structural Formula:</b>
+            <br />
+            <br />
+            <img src="download.jpeg" alt="image not found" />
+            <img src="images.jpeg" alt="structural formula image" />
+          </p>
+        </div>
+        <hr />
+      </section>
+
+      <!-- Uses Section -->
+      <section id="uses" class="section">
+        <h2>Indication</h2>
+        <div class="section-content">
+          <p>
+            ✔️Diazepam is primarily indicated in conditions like Agitation ,
+            Alcohol withdrawal ,Amnesia, Anxiety, chloroquine overdose, Dyspnoea
+            associated with anxiety in palliative care,Flare with initial
+            gonadorelin therapy, Insomnia,Muscle spasm Partial seizures ,
+            premedication sedation induction ,severe acute anxiety ,Status
+            epilepticus ,Tetanus ,Tonic- clonic seizure.
+            <br />
+            <br />
+            ✔️Diazepam is primarily indicated in conditions like Agitation ,
+            Treatment of acute migrane attack & epilepsy.
+          </p>
+
+          <img src="side.png" alt="Uses of Aspirin" />
+        </div>
+        <hr />
+      </section>
+      <section id="uses1" class="section">
+        <h2>Dosage</h2>
+        <div class="section-content">
+          <img
+            src="https://www.renalandurologynews.com/wp-content/uploads/sites/22/2019/01/gaspirinweb_1363362.jpg"
+            alt="Uses of Aspirin"
+          />
+
+          <table
+            border="1"
+            style="
+              height: 400px;
+              width: 500px;
+              text-align: center;
+              border-radius: 25px;
+              border: 5px solid rgb(54, 51, 51);
+            "
+          >
+            <caption>
+              Dose of Diazepam
+            </caption>
+            <colgroup>
+              <col
+                span="3"
+                style="
+                  background-color: rgba(80, 120, 122, 0.904);
+                  color: white;
+                "
+              />
+              <col
+                style="background-color: rgba(6, 59, 55, 0.447); color: white"
+              />
+            </colgroup>
+            <tr>
+              <th>Dosage</th>
+              <th>Adult</th>
+              <th>Neonate</th>
+              <th>Paedriatric</th>
+            </tr>
+            <tr>
+              <td>Dose</td>
+              <td>2 to 10 mg</td>
+              <td>0.2 to 0.3 mg /kg</td>
+              <td>0.25 mg/kg</td>
+            </tr>
+            <tr>
+              <td>Frequency</td>
+              <td>12 hourly</td>
+              <td>As recommend</td>
+              <td>24 hourly</td>
+            </tr>
+            <tr>
+              <td>Route</td>
+              <td>PO ,PR,IM,Slow IV</td>
+              <td>Slow IV</td>
+              <td>Oral</td>
+            </tr>
+          </table>
+        </div>
+        <hr />
+      </section>
+
+      <!-- Side Effects Section -->
+      <section id="form" class="section">
+        <h2>Dosage Form</h2>
+        <p>
+          <b>Available Dosage form: </b>
+          <br />
+          Diazepam is available in:
+          <br />
+          oral tablet
+          <br />
+          oral solution <br />
+          injectable solution <br />rectal gel or intranasal spray .
+        </p>
+        <br />
+        <img
+          src="dose.png"
+          alt="dose image"
+          style="width: 80%; margin: auto; height: 80%; display: flex"
+        />
+        <hr />
+      </section>
+
+      <!-- Warnings Section -->
+      <section id="action" class="section">
+        <h2>pharmacodynamics</h2>
+        <div class="section-content">
+          <p>
+            Diazepam binds to the GABAA receptor, increasing GABA’s affinity for
+            the receptor, which allows chloride ions to flow into neurons. This
+            hyperpolarizes the neurons, making it harder for them to reach the
+            threshold for action potential, thus reducing seizure activity.
+          </p>
+          <img src="image2.jpeg" alt="Aspirin Warnings" />
+        </div>
+        <hr />
+      </section>
+      <section id="warning" class="section">
+        <h2>Pharmacokinetic Parameters</h2>
+        <div class="section-content">
+          <img src="pharma.png" alt="Aspirin Warnings" />
+          <p>
+            <b> Absorption:</b>
+            Diazepam has 90%oral bioavailability and 97%intranasal .
+            <br />
+            <b>Distribution: </b>
+            The volume of distribution of diazepam at steady state is 0.8-1
+            L/kg. The protein bound of diazepam is 98% (PO) 95-98% (intranasal.
+            <br />
+            <b> Metabolism:</b>
+            It is rapidlly Metabolized by hepatic P450 enzymes CYP2C19, CYP3A4
+            <br />
+            <b>Active metabolites: </b>N-desmethyldiazepam and temazepam, which
+            are both further metabolized to oxazepam; largely eliminated by
+            glucuronidation
+            <br />
+            <b>Elimination:</b>
+            The Half-life of diazepam is 20-70 hr (active metabolite); 49.2 hr
+            (10-mg intranasal dose). It’s renal clearance is 20-30 mL/min.
+            <br />
+            <b>Excretion:</b> Diazepam is primarily excreted by urine .
+          </p>
+        </div>
+        <hr />
+      </section>
+      <section id="side" class="section">
+        <h2>Side effects</h2>
+        <div class="section-content">
+          <ul>
+            <li>Blood dyscrasias, Respiratory arrest ,Cardiac arrest .</li>
+            <li>
+              Apnea ,coma , Drowsiness,Confusion , cardiorespiratory depression.
+            </li>
+            <li>Skin rashes, Constipation, hypotension,sleep disturbance.</li>
+          </ul>
+          <img src="side11.jpg" alt="side effect image not found" />
+        </div>
+        <hr />
+      </section>
+      <section id="contra" class="section">
+        <h2>Contraindications</h2>
+        <div class="section-content">
+          <img src="contra.avif" alt="contra image not found" />
+          <p>
+            Diazepam is contraindicated in mysthenia gravis .
+            <br />It is also contraindicated in conditions like
+            hypersensitivity.
+          </p>
+        </div>
+        <hr />
+      </section>
+      <section id="usein" class="section">
+        <h2>Use in Pregnancy & Nursing</h2>
+        <div class="section-content">
+          <p>
+            Diazepam is a <b>Pregnancy category D </b>drug . Breastfeeding is
+            not recommended in patients receiving diazepam .Special care must be
+            taken when diazepam is used during labor and delivery.
+          </p>
+          <img src="imgggg.jpg" alt="contra image not found" height="50%" />
+        </div>
+        <hr />
+      </section>
+      <section id="war" class="section">
+        <h2>Warning & Precautions</h2>
+        <div class="section-content2" style="text-align: center">
+          <p>
+            Advise both patients and caregivers about risks of respiratory
+            depression and sedation when diazepam is used with opioids&Alcohol .
+            <br />
+
+            Use caution in COPD, sleep apnea, renal/hepatic disease, open-angle
+            glaucoma (questionable), depression, , history of drug abuse.
+          </p>
+          <br /><br />
+          <img src="wari.jpg" alt="contra image not found" />
+        </div>
+        <hr />
+      </section>
+      <section id="inter" class="section">
+        <h2>Interaction</h2>
+        <div class="section-content">
+          <img src="inter.png" alt="contra image not found" />
+          <p>
+            <b>Drug-Drug interaction:</b>
+            <br />
+            Diazepam has Drug Drug interactions with opioids class of drugs (
+            Morphine ,codiene ,hydrocodone ,cannabis )
+            <br />
+            <br />
+            <b> Drug -Food interaction:</b>
+            <br />
+            Abuse and misuse of benzodiazepines commonly involve with
+            concomitant use Alcohol .
+          </p>
+        </div>
+        <hr />
+      </section>
+      <section id="brand" class="section">
+        <h2>Common Brands in Pakistan</h2>
+        <div class="section-content">
+          <table
+            border="5"
+            style="
+              height: 300px;
+              width: 600px;
+              text-align: center;
+              border-radius: 25px;
+              border: 5px solid rgb(54, 51, 51);
+            "
+          >
+            <caption>
+              Common Brands in Pakistan
+            </caption>
+            <colgroup>
+              <col
+                span="3"
+                style="
+                  background-color: rgba(80, 120, 122, 0.904);
+                  color: white;
+                "
+              />
+            </colgroup>
+            <tr>
+              <th>Brand</th>
+              <th>Dosage</th>
+              <th>Price</th>
+              <th>Picture</th>
+            </tr>
+            <tr>
+              <td>Valium</td>
+              <td>Tablet</td>
+              <td>20.88</td>
+              <td><img src="vali.jpeg" alt="image not found" /></td>
+            </tr>
+            <tr>
+              <td>Valium</td>
+              <td>Injectable</td>
+              <td>120.00</td>
+              <td>
+                <img src="injection.jpeg" alt="image not found" />
+              </td>
+            </tr>
+            <tr>
+              <td>Diazepam</td>
+              <td>Rectal gel</td>
+              <td>80.00</td>
+              <td><img src="gel.jpeg" alt="image not found" /></td>
+            </tr>
+          </table>
+          <img src="vali.avif" alt="contra image not found" />
+        </div>
+        <hr />
+      </section>
+      <section id="refer" class="section">
+        <h2>References</h2>
+        <div class="section-content">
+          <img src="ref.webp" alt="reference image" />
+          <p>
+            <a
+              href="https://search.medscape.com/search?q=%22Montelukast%22&plr=ref&page=1
+          "
+              >Medscape</a
+            ><br />
+            <a href="#"
+              >PharmaGuide A complete Guide to Medicine in Pakistan
+            </a>
+            <br />
+            <a href="#">Pharmapedia </a>
+            <br />
+            <a href="https://www.drugs.com">Drugs.com</a>
+            <br />
+            <a href="#">Pharmacology Lippincott </a>
+          </p>
+        </div>
+        <hr />
+      </section>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+      <p>&copy; 2025 Diazepam Monograph | All Rights Reserved</p>
+    </footer>
+  </body>
+</html>
