@@ -525,7 +525,7 @@
         }
 
         nav ul li {
-          /* margin: 10px 15px; */
+          padding: 10px;
           list-style: none;
           /* display: none; */
         }
@@ -541,9 +541,11 @@
           margin: 0 auto;
           align-items: center;
           justify-content: center;
+          margin-bottom: 20px;
         }
 
         .section-content {
+          display: flex;
           flex-direction: column;
         }
 
@@ -568,6 +570,19 @@
           background-color: #000; /* change to your underline color */
           margin: 8px auto 0;
         }
+        .section1 {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+        }
+        .main-div {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+        }
+        .main {
+          margin-bottom: 20px;
+        }
 
         #btn1 {
           margin: 15px auto;
@@ -576,6 +591,9 @@
         footer {
           text-align: center;
           padding: 25px 15px;
+        }
+        .card {
+          margin-bottom: 20px;
         }
       }
 
@@ -653,6 +671,19 @@
           font-size: 0.9em;
           padding: 0 10px;
         }
+        .section1 {
+          display: flex;
+          flex-direction: column;
+          margin-bottom: 20px;
+        }
+        .main-div {
+          display: flex;
+          flex-direction: column;
+          margin: 10px;
+        }
+        .main {
+          margin-bottom: 20px;
+        }
 
         #btn1 {
           width: 100px;
@@ -691,6 +722,7 @@
           overflow-x: hidden;
           background-size: cover;
           background-position: center;
+          margin-bottom: 20px;
         }
 
         /* Also ensure body doesn't scroll sideways */
@@ -792,7 +824,10 @@
       <section id="overview" class="section">
         <h2>Overview</h2>
         <!-- Introduction Card -->
-        <div style="display: flex; justify-content: space-around">
+        <div
+          style="display: flex; justify-content: space-around"
+          class="main-div"
+        >
           <div class="main">
             <h3 style="color: rgba(16, 133, 123, 0.786); font-weight: bold">
               <i class="fas fa-info-circle"></i> Introduction
@@ -987,69 +1022,6 @@
         </div>
       </section>
 
-      <!-- Side Effects Section -->
-      <!-- <section id="form" class="section">
-        <h2>Dosage Form</h2>
-        <p>
-          <b>Available Dosage form: </b>
-          <br />
-          Diazepam is available in:
-          <br />
-          oral tablet
-          <br />
-          oral solution <br />
-          injectable solution <br />rectal gel or intranasal spray .
-        </p>
-        <br />
-        <img
-          src="dose.png"
-          alt="dose image"
-          style="width: 80%; margin: auto; height: 80%; display: flex"
-        />
-      </section> -->
-
-      <!-- Warnings Section -->
-      <!-- <section id="action" class="section">
-        <h2>pharmacodynamics</h2>
-        <div class="section-content">
-          <p>
-            Diazepam binds to the GABAA receptor, increasing GABA’s affinity for
-            the receptor, which allows chloride ions to flow into neurons. This
-            hyperpolarizes the neurons, making it harder for them to reach the
-            threshold for action potential, thus reducing seizure activity.
-          </p>
-          <img src="image2.jpeg" alt="Aspirin Warnings" />
-        </div>
-      </section> -->
-      <!-- <section id="warning" class="section">
-        <h2>Pharmacokinetic Parameters</h2>
-        <div class="section-content">
-          <img src="pharma.png" alt="Aspirin Warnings" />
-          <p>
-            <b> Absorption:</b>
-            Diazepam has 90%oral bioavailability and 97%intranasal .
-            <br />
-            <b>Distribution: </b>
-            The volume of distribution of diazepam at steady state is 0.8-1
-            L/kg. The protein bound of diazepam is 98% (PO) 95-98% (intranasal.
-            <br />
-            <b> Metabolism:</b>
-            It is rapidlly Metabolized by hepatic P450 enzymes CYP2C19, CYP3A4
-            <br />
-            <b>Active metabolites: </b>N-desmethyldiazepam and temazepam, which
-            are both further metabolized to oxazepam; largely eliminated by
-            glucuronidation
-            <br />
-            <b>Elimination:</b>
-            The Half-life of diazepam is 20-70 hr (active metabolite); 49.2 hr
-            (10-mg intranasal dose). It’s renal clearance is 20-30 mL/min.
-            <br />
-            <b>Excretion:</b> Diazepam is primarily excreted by urine .
-          </p>
-        </div>
-      </section> -->
-
-      <!-- ***************************************** -->
       <section class="section1">
         <div class="card">
           <h3>💊 Available Forms</h3>
@@ -1410,7 +1382,7 @@
           </p>
           <div class="qr-image-box">
             <!-- Replace 'qr.png' with your actual QR code image -->
-            <img src="qr.png" alt="QR Code - Scan Me" class="qr-image" />
+            <img src="scan.png" alt="QR Code - Scan Me" class="qr-image" />
           </div>
           <p class="note">Your health knowledge — now one scan away 📲</p>
         </div>
