@@ -25,7 +25,7 @@
 
       /* Navbar */
       nav {
-        background-color: #333;
+        background-color: #034742c9;
         height: 100px;
         padding: 25px 0;
         position: sticky;
@@ -53,8 +53,8 @@
       }
 
       nav ul li a:hover {
-        color: rgba(80, 120, 122, 0.904);
-        border-bottom: 2px solid rgba(80, 120, 122, 0.904);
+        color: rgba(0, 8, 7, 0.786);
+        border-bottom: 2px solid rgba(0, 8, 7, 0.786);
         /* border: 2px solid #f76b1c; */
         /* width: 80px; */
         /* height: 40px; */
@@ -115,7 +115,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.4);
+        background: rgba(0, 8, 7, 0.786);
         z-index: 1;
       }
 
@@ -141,8 +141,7 @@
 
       /* Container for content sections */
       .container {
-        width: 85%;
-
+        width: 80%;
         margin: 0 auto;
         padding: 60px 0;
       }
@@ -150,9 +149,18 @@
       /* Section Styling */
       .section {
         margin-bottom: 60px;
+        border-left: 5px solid rgba(0, 8, 7, 0.786);
+        /* border-bottom: 5px solid rgba(0, 8, 7, 0.786); */
+        box-shadow: 5px 5px 5px rgba(0, 8, 7, 0.786);
+        padding: 25px;
+        border-radius: 25px;
+        /* background-color: rgba(146, 227, 230, 0.679); */
         position: relative;
         animation: fadeIn 2s ease-out;
       }
+      /* .section :hover {
+        transform: scale(1.05);
+      } */
 
       .section h2 {
         font-size: 2.5em;
@@ -171,7 +179,7 @@
         left: 0;
         width: 80px;
         height: 4px;
-        background-color: #f76b1c;
+        background-color: rgba(0, 8, 7, 0.786);
       }
 
       /* Section Content Styling */
@@ -205,16 +213,9 @@
         text-align: justify;
       }
 
-      /* Horizontal Line Styling */
-      hr {
-        border: 0;
-        border-top: 2px solid #ddd;
-        margin: 50px 0;
-      }
-
       /* Footer Styling */
       footer {
-        background-color: #333;
+        background-color: #034742c9;
         color: white;
         padding: 30px 0;
         text-align: center;
@@ -228,7 +229,7 @@
 
       /* Button Styling */
       .btn {
-        background-color: #f76b1c;
+        background-color: #034742c9;
         color: white;
         padding: 12px 30px;
         text-decoration: none;
@@ -238,7 +239,266 @@
       }
 
       .btn:hover {
-        background-color: #333;
+        background-color: rgba(0, 8, 7, 0.786);
+      }
+
+      .section1 {
+        margin-bottom: 60px;
+        display: flex;
+        justify-content: space-around;
+        /* border-left: 5px solid rgba(0, 8, 7, 0.786); */
+        /* border-bottom: 5px solid rgba(0, 8, 7, 0.786); */
+        box-shadow: 5px 5px 5px rgba(0, 8, 7, 0.786);
+        padding: 25px;
+        border-radius: 25px;
+        /* background-color: rgba(146, 227, 230, 0.679); */
+        position: relative;
+        animation: fadeIn 2s ease-out;
+      }
+
+      .card {
+        background: #fff;
+        /* border: 2px solid #e2e8f0; */
+        border-radius: 25px;
+        box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.05);
+        padding: 20px;
+        width: 380px;
+        border-left: 5px solid #034742c9;
+        transition: transform 0.2s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .card h3 {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+        color: rgba(0, 8, 7, 0.786);
+        border-bottom: 2px solid rgba(0, 8, 7, 0.786);
+        padding-bottom: 5px;
+      }
+
+      .card ul {
+        padding-left: 20px;
+      }
+
+      .card ul li {
+        line-height: 1.5;
+        margin-bottom: 6px;
+      }
+
+      .card p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+      }
+
+      .card img {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 8px;
+      }
+      .main {
+        flex: 1;
+        min-width: 280px;
+        max-width: 320px;
+        border-left: 4px solid rgba(16, 133, 123, 0.786);
+        border-radius: 20px;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .main:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+      }
+      .warning-card {
+        width: 100%;
+        background: #fffbea;
+        border: 2px solid #facc15;
+        box-shadow: 0 4px 12px rgba(252, 211, 77, 0.3);
+        margin-bottom: 60px;
+      }
+
+      .warning-card h3 {
+        color: #b91c1c;
+        font-size: 1.25rem;
+        border-bottom: 1px solid #fde68a;
+        padding-bottom: 5px;
+      }
+
+      .warning-card p {
+        color: #78350f;
+        font-size: 1rem;
+        line-height: 1.6;
+        margin: 10px 0;
+      }
+
+      .warning-card strong {
+        color: #b45309;
+      }
+
+      .warning-card img {
+        margin-top: 15px;
+        width: 100%;
+        border-radius: 10px;
+      }
+      .interaction-card {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: #f0f9ff;
+        border: 1px solid #38bdf8;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(56, 189, 248, 0.25);
+        margin-bottom: 60px;
+      }
+
+      .interaction-card h3 {
+        color: #0369a1;
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        border-bottom: 2px dashed #bae6fd;
+        padding-bottom: 5px;
+      }
+
+      .interaction-card img {
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin: 15px 0;
+      }
+
+      .interaction-block {
+        background: #e0f2fe;
+        border-left: 5px solid #0284c7;
+        padding: 15px;
+        margin-bottom: 15px;
+        border-radius: 8px;
+      }
+
+      .interaction-block h4 {
+        color: #0c4a6e;
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+      }
+
+      .interaction-block p {
+        color: #075985;
+        font-size: 1rem;
+        line-height: 1.6;
+      }
+
+      .interaction-block strong {
+        color: #0ea5e9;
+      }
+
+      .interaction-block em {
+        font-style: italic;
+        color: #0369a1;
+      }
+
+      .references-card {
+        width: 100%;
+        background: #f0f9ff; /* Light blue background */
+        border: 1px solid #bae6fd;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 16px rgba(3, 105, 161, 0.15);
+        margin-bottom: 60px;
+      }
+
+      .references-card h3 {
+        color: #0c4a6e;
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+        text-align: center;
+        border-bottom: 2px dashed #38bdf8;
+        padding-bottom: 10px;
+      }
+
+      .ref-image {
+        width: 50%;
+        max-height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        display: block;
+        margin: 0 auto 25px auto; /* Centered image */
+        border: 2px solid #7dd3fc;
+        box-shadow: 0 4px 8px rgba(14, 165, 233, 0.2);
+      }
+
+      .reference-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .reference-list li {
+        font-size: 1rem;
+        margin-bottom: 12px;
+        color: #0f172a;
+      }
+
+      .reference-list a {
+        color: #0284c7;
+        font-weight: 600;
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+
+      .reference-list a:hover {
+        color: #0369a1;
+        text-decoration: underline;
+      }
+      #qr-code {
+        width: 100%;
+        border: 3px dotted #034742c9;
+      }
+      .qr-card {
+        background: #e0f2fe;
+        padding: 40px;
+        border-radius: 16px;
+        text-align: center;
+        max-width: 600px;
+        width: 100%;
+        box-shadow: 0 10px 25px rgba(3, 105, 161, 0.1);
+      }
+
+      .qr-card h2 {
+        font-size: 2rem;
+        color: #0c4a6e;
+        margin-bottom: 15px;
+      }
+
+      .qr-card p {
+        font-size: 1rem;
+        color: #0f172a;
+        margin-bottom: 20px;
+        line-height: 1.6;
+      }
+
+      .qr-image-box {
+        margin: 25px 0;
+      }
+
+      .qr-image {
+        width: 180px;
+        height: 180px;
+        object-fit: contain;
+        border: 2px dashed #0284c7;
+        padding: 10px;
+        border-radius: 12px;
+        background: white;
+        box-shadow: 0 4px 12px rgba(14, 165, 233, 0.2);
+      }
+
+      .note {
+        font-style: italic;
+        color: #0369a1;
+        font-weight: 500;
       }
 
       /* Tablet Devices (max-width: 768px) */
@@ -343,7 +603,7 @@
 
         nav ul li {
           margin: 8px 1px;
-          display: none;
+          /* display: none; */
         }
 
         /* Centering content */
@@ -468,6 +728,7 @@
             height="70px"
           />
         </li>
+
         <li><a href="#home">Home</a></li>
         <li><a href="#overview">Overview</a></li>
         <li><a href="#uses">Indication</a></li>
@@ -499,7 +760,7 @@
     <!-- Main Content Section -->
     <div class="container">
       <!-- Overview Section -->
-      <section id="overview" class="section">
+      <!-- <section id="overview" class="section">
         <h2>Overview</h2>
         <div class="section-content">
           <img
@@ -526,6 +787,83 @@
           </p>
         </div>
         <hr />
+      </section> -->
+
+      <section id="overview" class="section">
+        <h2>Overview</h2>
+        <!-- Introduction Card -->
+        <div style="display: flex; justify-content: space-around">
+          <div class="main">
+            <h3 style="color: rgba(16, 133, 123, 0.786); font-weight: bold">
+              <i class="fas fa-info-circle"></i> Introduction
+            </h3>
+            <hr
+              style="
+                border: none;
+                border-top: 2px solid #e91e63;
+                width: 40px;
+                margin: 10px 0;
+              "
+            />
+            <p>
+              <strong>Diazepam</strong> is an anxiolytic drug belonging to the
+              benzodiazepine class. It has a rapid onset and is commonly used to
+              treat panic disorders, severe anxiety, alcohol withdrawal, and
+              seizures.
+            </p>
+          </div>
+
+          <!-- Chemical Formula Card -->
+          <div class="main">
+            <h3 style="color: rgba(16, 133, 123, 0.786); font-weight: bold">
+              <i class="fas fa-flask"></i> Chemical Formula
+            </h3>
+            <hr
+              style="
+                border: none;
+                border-top: 2px solid #e91e63;
+                width: 40px;
+                margin: 10px auto;
+              "
+            />
+            <div
+              style="
+                font-size: 28px;
+                background: #e8f1ff;
+                padding: 15px;
+                border-radius: 10px;
+                font-weight: bold;
+              "
+            >
+              C<sub>16</sub>H<sub>13</sub>ClN<sub>2</sub>O
+            </div>
+          </div>
+          <div class="main">
+            <h3 style="color: rgba(16, 133, 123, 0.786); font-weight: bold">
+              <i class="fas fa-cogs"></i> Structural Formula
+            </h3>
+            <hr
+              style="
+                border: none;
+                border-top: 2px solid #e91e63;
+                width: 40px;
+                margin: 10px auto;
+              "
+            />
+            <img
+              src="images.jpeg"
+              alt="structural formula"
+              style="max-width: 100%; height: auto; margin-bottom: 10px"
+            />
+            <img
+              src="download.jpeg"
+              alt="structural formula 2"
+              style="max-width: 100%; height: auto"
+            />
+          </div>
+        </div>
+
+        <!-- Structural Formula Card -->
       </section>
 
       <!-- Uses Section -->
@@ -547,17 +885,12 @@
 
           <img src="side.png" alt="Uses of Aspirin" />
         </div>
-        <hr />
       </section>
-      <section id="uses1" class="section">
-        <h2>Dosage</h2>
-        <div class="section-content">
-          <img
-            src="https://www.renalandurologynews.com/wp-content/uploads/sites/22/2019/01/gaspirinweb_1363362.jpg"
-            alt="Uses of Aspirin"
-          />
 
-          <table
+      <section id="uses1" class="section">
+        <h2>💊 Dose of Diazepam</h2>
+        <div class="section-content">
+          <!-- <table
             border="1"
             style="
               height: 400px;
@@ -607,13 +940,55 @@
               <td>Slow IV</td>
               <td>Oral</td>
             </tr>
+          </table> -->
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <thead>
+              <tr
+                style="
+                  background-color: rgba(16, 133, 123, 0.786);
+                  color: white;
+                "
+              >
+                <th style="padding: 10px">Parameter</th>
+                <th style="padding: 10px">Adult</th>
+                <th style="padding: 10px">Neonate</th>
+                <th style="padding: 10px">Paediatric</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f9f9f9">
+                <td style="padding: 10px">Dose</td>
+                <td>2 to 10 mg</td>
+                <td>0.2 to 0.3 mg/kg</td>
+                <td>0.25 mg/kg</td>
+              </tr>
+              <tr>
+                <td style="padding: 10px">Frequency</td>
+                <td>12 hourly</td>
+                <td>As recommended</td>
+                <td>24 hourly</td>
+              </tr>
+              <tr style="background-color: #f9f9f9">
+                <td style="padding: 10px">Route</td>
+                <td>PO, PR, IM, Slow IV</td>
+                <td>Slow IV</td>
+                <td>Oral</td>
+              </tr>
+            </tbody>
           </table>
         </div>
-        <hr />
       </section>
 
       <!-- Side Effects Section -->
-      <section id="form" class="section">
+      <!-- <section id="form" class="section">
         <h2>Dosage Form</h2>
         <p>
           <b>Available Dosage form: </b>
@@ -631,11 +1006,10 @@
           alt="dose image"
           style="width: 80%; margin: auto; height: 80%; display: flex"
         />
-        <hr />
-      </section>
+      </section> -->
 
       <!-- Warnings Section -->
-      <section id="action" class="section">
+      <!-- <section id="action" class="section">
         <h2>pharmacodynamics</h2>
         <div class="section-content">
           <p>
@@ -646,9 +1020,8 @@
           </p>
           <img src="image2.jpeg" alt="Aspirin Warnings" />
         </div>
-        <hr />
-      </section>
-      <section id="warning" class="section">
+      </section> -->
+      <!-- <section id="warning" class="section">
         <h2>Pharmacokinetic Parameters</h2>
         <div class="section-content">
           <img src="pharma.png" alt="Aspirin Warnings" />
@@ -674,9 +1047,50 @@
             <b>Excretion:</b> Diazepam is primarily excreted by urine .
           </p>
         </div>
-        <hr />
+      </section> -->
+
+      <!-- ***************************************** -->
+      <section class="section1">
+        <div class="card">
+          <h3>💊 Available Forms</h3>
+          <ul>
+            <li>Oral Tablet</li>
+            <li>Oral Solution</li>
+            <li>Injectable Solution</li>
+            <li>Rectal Gel</li>
+            <li>Intranasal Spray</li>
+          </ul>
+          <img src="dose.png" alt="Dosage Image" />
+        </div>
+
+        <div class="card">
+          <h3>🧠 Pharmacodynamics</h3>
+          <p>
+            Diazepam binds to the GABAA receptor, increasing GABA’s affinity,
+            allowing chloride ions into neurons. This hyperpolarizes them,
+            lowering seizure activity.
+          </p>
+          <img src="image2.jpeg" alt="Pharmacodynamics Image" />
+        </div>
+
+        <div class="card">
+          <h3>📊 Pharmacokinetics</h3>
+          <ul>
+            <li><b>Absorption:</b> 90% oral, 97% intranasal</li>
+            <li><b>Distribution:</b> 0.8–1 L/kg; 95–98% protein bound</li>
+            <li><b>Metabolism:</b> CYP2C19, CYP3A4</li>
+            <li>
+              <b>Active Metabolites:</b> N-desmethyldiazepam, temazepam →
+              oxazepam
+            </li>
+            <li><b>Elimination:</b> Half-life 20–70 hr; 49.2 hr intranasal</li>
+            <li><b>Excretion:</b> Renal (urine)</li>
+          </ul>
+          <img src="pharma.png" alt="Pharmacokinetics Image" />
+        </div>
       </section>
-      <section id="side" class="section">
+
+      <!-- <section id="side" class="section">
         <h2>Side effects</h2>
         <div class="section-content">
           <ul>
@@ -688,9 +1102,8 @@
           </ul>
           <img src="side11.jpg" alt="side effect image not found" />
         </div>
-        <hr />
-      </section>
-      <section id="contra" class="section">
+      </section> -->
+      <!-- <section id="contra" class="section">
         <h2>Contraindications</h2>
         <div class="section-content">
           <img src="contra.avif" alt="contra image not found" />
@@ -700,9 +1113,8 @@
             hypersensitivity.
           </p>
         </div>
-        <hr />
-      </section>
-      <section id="usein" class="section">
+      </section> -->
+      <!-- <section id="usein" class="section">
         <h2>Use in Pregnancy & Nursing</h2>
         <div class="section-content">
           <p>
@@ -712,9 +1124,47 @@
           </p>
           <img src="imgggg.jpg" alt="contra image not found" height="50%" />
         </div>
-        <hr />
+      </section> -->
+      <section class="section1">
+        <!-- Side Effects -->
+        <div class="card">
+          <h3>⚠️ Side Effects</h3>
+          <ul>
+            <li>Blood dyscrasias, Respiratory arrest, Cardiac arrest</li>
+            <li>
+              Apnea, Coma, Drowsiness, Confusion, Cardiorespiratory depression
+            </li>
+            <li>Skin rashes, Constipation, Hypotension, Sleep disturbance</li>
+          </ul>
+          <img src="side11.jpg" alt="Side effect image not found" />
+        </div>
+
+        <!-- Contraindications -->
+        <div class="card">
+          <h3>🚫 Contraindications</h3>
+          <p>
+            Diazepam is contraindicated in
+            <strong>myasthenia gravis</strong>.<br />
+            It is also contraindicated in conditions like
+            <strong>hypersensitivity</strong>.
+          </p>
+          <img src="contra.avif" alt="Contraindication image not found" />
+        </div>
+
+        <!-- Use in Pregnancy & Nursing -->
+        <div class="card">
+          <h3>🤰 Pregnancy & Nursing</h3>
+          <p>
+            Diazepam is a <strong>Pregnancy Category D</strong> drug. <br />
+            Breastfeeding is <strong>not recommended</strong> in patients
+            receiving diazepam. <br />
+            Special care must be taken when used during labor and delivery.
+          </p>
+          <img src="imgggg.jpg" alt="Pregnancy image not found" />
+        </div>
       </section>
-      <section id="war" class="section">
+
+      <!-- <section id="war" class="section">
         <h2>Warning & Precautions</h2>
         <div class="section-content2" style="text-align: center">
           <p>
@@ -728,9 +1178,27 @@
           <br /><br />
           <img src="wari.jpg" alt="contra image not found" />
         </div>
-        <hr />
+      </section> -->
+      <section class="section1">
+        <div class="card warning-card">
+          <h3>⚠️ Warning & Precautions</h3>
+          <p>
+            Advise both patients and caregivers about the risks of
+            <strong>respiratory depression and sedation</strong> when diazepam
+            is used with <strong>opioids & alcohol</strong>.
+          </p>
+          <p>
+            Use caution in conditions like:
+            <strong>COPD</strong>, <strong>sleep apnea</strong>,
+            <strong>renal/hepatic disease</strong>,
+            <strong>open-angle glaucoma</strong> (questionable),
+            <strong>depression</strong>, and a
+            <strong>history of drug abuse</strong>.
+          </p>
+        </div>
       </section>
-      <section id="inter" class="section">
+
+      <!-- <section id="inter" class="section">
         <h2>Interaction</h2>
         <div class="section-content">
           <img src="inter.png" alt="contra image not found" />
@@ -747,12 +1215,40 @@
             concomitant use Alcohol .
           </p>
         </div>
-        <hr />
+      </section> -->
+      <section id="inter" class="section1">
+        <div class="card interaction-card">
+          <h3>💊 Drug Interactions</h3>
+          <img src="inter.png" alt="Interaction image not found" />
+
+          <div class="interaction-block">
+            <h4>🔁 Drug-Drug Interaction</h4>
+            <p>
+              Diazepam interacts with <strong>opioid-class drugs</strong> such
+              as: <em>Morphine, Codeine, Hydrocodone, and Cannabis</em>. These
+              combinations can increase the risk of
+              <strong
+                >severe sedation, respiratory depression, and even death</strong
+              >.
+            </p>
+          </div>
+
+          <div class="interaction-block">
+            <h4>🍷 Drug-Food Interaction</h4>
+            <p>
+              Concurrent use of <strong>Diazepam with Alcohol</strong> may lead
+              to misuse or abuse. The risk of
+              <strong>central nervous system depression</strong>
+              significantly increases when both are taken together.
+            </p>
+          </div>
+        </div>
       </section>
+
       <section id="brand" class="section">
         <h2>Common Brands in Pakistan</h2>
         <div class="section-content">
-          <table
+          <!-- <table
             class="table-wrapper"
             border="5"
             style="
@@ -801,12 +1297,86 @@
               <td>80.00</td>
               <td><img src="gel.jpeg" alt="image not found" /></td>
             </tr>
+          </table> -->
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border-radius: 10px;
+              overflow: hidden;
+              box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            "
+          >
+            <caption
+              style="
+                caption-side: top;
+                font-weight: bold;
+                font-size: 1.5em;
+                padding: 10px;
+                color: rgba(16, 133, 123, 0.786);
+                text-align: left;
+              "
+            >
+              🏷️ Common Brands in Pakistan
+            </caption>
+            <thead>
+              <tr
+                style="
+                  background-color: rgba(16, 133, 123, 0.786);
+                  color: white;
+                "
+              >
+                <th style="padding: 10px">Brand</th>
+                <th style="padding: 10px">Dosage</th>
+                <th style="padding: 10px">Price (PKR)</th>
+                <th style="padding: 10px">Picture</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background-color: #f9f9f9">
+                <td>Valium</td>
+                <td>Tablet</td>
+                <td>20.88</td>
+                <td>
+                  <img
+                    src="vali.jpeg"
+                    alt="image not found"
+                    width="60"
+                    height="40"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td>Valium</td>
+                <td>Injectable</td>
+                <td>120.00</td>
+                <td>
+                  <img
+                    src="injection.jpeg"
+                    alt="image not found"
+                    width="60"
+                    height="40"
+                  />
+                </td>
+              </tr>
+              <tr style="background-color: #f9f9f9">
+                <td>Diazepam</td>
+                <td>Rectal gel</td>
+                <td>80.00</td>
+                <td>
+                  <img
+                    src="gel.jpeg"
+                    alt="image not found"
+                    width="60"
+                    height="40"
+                  />
+                </td>
+              </tr>
+            </tbody>
           </table>
-          <img src="vali.avif" alt="contra image not found" />
         </div>
-        <hr />
       </section>
-      <section id="refer" class="section">
+      <!-- <section id="refer" class="section">
         <h2>References</h2>
         <div class="section-content">
           <img src="ref.webp" alt="reference image" />
@@ -827,13 +1397,72 @@
             <a href="#">Pharmacology Lippincott </a>
           </p>
         </div>
-        <hr />
+      </section> -->
+
+      <section id="qr-code" class="section1">
+        <div class="qr-card">
+          <h2>Scan & Explore More</h2>
+          <p>
+            Want quick access to more medical details, resources, or
+            downloads?<br />
+            Just scan the QR code below and carry the essential info with you —
+            anytime, anywhere.
+          </p>
+          <div class="qr-image-box">
+            <!-- Replace 'qr.png' with your actual QR code image -->
+            <img src="qr.png" alt="QR Code - Scan Me" class="qr-image" />
+          </div>
+          <p class="note">Your health knowledge — now one scan away 📲</p>
+        </div>
+      </section>
+      <section id="refer" class="section1">
+        <div class="references-card">
+          <h3>📚 References & Resources</h3>
+
+          <img
+            src="ref.webp"
+            alt="Reference image not found"
+            class="ref-image"
+          />
+
+          <ul class="reference-list">
+            <li>
+              🔗
+              <a
+                href="https://search.medscape.com/search?q=%22Montelukast%22&plr=ref&page=1"
+                target="_blank"
+              >
+                Medscape – Montelukast Search
+              </a>
+            </li>
+            <li>
+              🔗
+              <a href="#" target="_blank">
+                PharmaGuide – A Complete Guide to Medicines in Pakistan
+              </a>
+            </li>
+            <li>🔗 <a href="#" target="_blank"> Pharmapedia </a></li>
+            <li>
+              🔗
+              <a href="https://www.drugs.com" target="_blank">
+                Drugs.com – Comprehensive Drug Database
+              </a>
+            </li>
+            <li>
+              🔗 <a href="#" target="_blank"> Pharmacology – Lippincott </a>
+            </li>
+          </ul>
+        </div>
       </section>
     </div>
 
     <!-- Footer Section -->
     <footer>
-      <p>&copy; 2025 Diazepam Monograph | All Rights Reserved</p>
+      <p>
+        &copy; 2025 Diazepam Monograph | Paracetamol Information Portal. All
+        information provided is for educational purposes only.
+      </p>
+      <p>Consult a healthcare professional before taking any medication.</p>
     </footer>
   </body>
 </html>
